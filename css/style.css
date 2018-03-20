@@ -19,13 +19,13 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    border: 1px solid red;
+/*    border: 1px solid red;*/
 }
 
 .layerlens1 .lens {
     position: absolute;
     top: 30px;
-    left: 1050px;
+    left: 100px;
     width: 300px;
     height: 100px;
 
@@ -38,10 +38,10 @@
 
 .layerlens2 .lens {
     position: absolute;
-    top: 120px;
-    left: 1100px;
+    top: 150px;
+    left: 780px;
     overflow: hidden;
-    width: 300px;
+    width: 200px;
     height: 300px;
 }
 
