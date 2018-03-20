@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    outline: 0;
+    margin: 0;
+}
+
+.contentwrapper {
+    width: 100%;
+    background-image: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    /*    //animation: zoomback 7s linear infinite;*/
+}
+
+.content {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.layerlens1 .lens {
+    position: absolute;
+    top: 30px;
+    left: 1050px;
+    width: 300px;
+    height: 100px;
+}
+
+.layerlens1 .lens img {
+    display: block;
+
+}
+
+.layerlens2 .lens {
+    position: absolute;
+    top: 120px;
+    left: 1100px;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.layerlens2 .lens img {
+    display: block;
+    opacity: .8;
+}
+
+.img-right {
+    background-image: url(../images/a.png);
+    width: 800px;
+    height: 800px;
+    background-size: 390px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 780px;
+    top: 85px;
+}
+
+.img-left {
+    background-image: url(../images/ak.png);
+    width: 400px;
+    height: 400px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 200px;
+    top: 40px;
+}
+
+.img-mid {
+    background-image: url(../images/s.png);
+    width: 800px;
+    height: 800px;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 400px;
+    top: 85px;
+}
+
+.img-mid2 {
+    background-image: url(../images/tmu2.png);
+    width: 800px;
+    height: 800px;
+    background-size: 450px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 550px;
+    top: 50px;
+}
+
+
+
+
+/***********************/

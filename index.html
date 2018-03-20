@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>parallex</title>
+    <link rel="stylesheet" href="css/1140.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <div class="contentwrapper" id="holder">
+        <div class="content">
+            <div class="wrapper" id="container">
+                <ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15">
+
+                    <li class="layer layerlens1" data-depth="0.90">
+                        <div class="lens">
+                        </div>
+                    </li>
+
+                    <li class="layer" data-depth="0.20">
+                        <div class="img-left"></div>
+                    </li>
+
+                    <li class="layer" data-depth="0.25">
+                        <div class="img-right"></div>
+                    </li>
+
+                    <li class="layer" data-depth="0.30">
+                        <div class="img-mid"></div>
+                    </li>
+
+                    <li class="layer" data-depth="0.35">
+                        <div class="img-mid2"></div>
+                    </li>
+
+                    <li class="layer layerlens2" data-depth="0.50">
+                        <div class="lens ">
+                            <img src="images/light-orange.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+<div id="container" class="wrapper">
+    <ul id="scene" class="scene unselectable" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15">
+
+        <li class="layer" data-depth="0.90"><img src="images/tmu2.png" alt=""></li>
+        <li class="layer" data-depth="0.10"><img src="images/m1.png" alt=""></li>
+        <li class="layer" data-depth="0.40">
+            sdfds
+            <div class="background" style="background:green; height:100px;width:100px;"></div>
+        </li>
+        <li class="layer c" data-depth="0.60"><img src="images/light-orange.png" alt=""></li>
+    </ul>
+</div>
+-->
+
+
+    <script src="js/libraries.min.js"></script>
+    <script src="deploy/jquery.parallax.js"></script>
+    <script src="js/jquery.ripples.js"></script>
+    <script src="js/jquery.ripples-min.js"></script>
+    <script>
+        // jQuery Selections
+        var
+            $container = $('#container'),
+            $scene = $('#scene');
+
+        // Pretty simple huh?
+        $scene.parallax();
+
+        // Check for orientation support.
+        setTimeout(function() {
+            if ($scene.data('mode') === 'cursor') {
+                $prompt.removeClass('hide');
+                if (window.innerWidth < 600) $toggle.addClass('hide');
+                $prompt.on('click', function(event) {
+                    $prompt.addClass('hide');
+                    if (window.innerWidth < 600) {
+                        setTimeout(function() {
+                            $toggle.removeClass('hide');
+                        }, 1200);
+                    }
+                });
+            }
+        }, 1000);
+
+        $('#holder').ripples({
+            resolution: 512,
+            dropRadius: 20,
+            perturbance: .04
+        });
+    </script>
+
+</body>
+
+</html>
